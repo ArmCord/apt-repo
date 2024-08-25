@@ -19,7 +19,9 @@ jobs:
         run: apt-ftparchive release debian > debian/Release
 
       - name: Import private GPG key
-        run: echo -n ${{secrets.APT_SIGNING_KEY}} | gpg --import
+        run: echo -n "$APT_SIGNING_KEY" | gpg --import
+        env:
+          APT_SIGNING_KEY: ${{secrets.APT_SIGNING_KEY}}
 
       - name: Sign Release file
         run: gpg --default-key linux@armcord.app -abs -o - debian/Release > debian/Release.gpg
