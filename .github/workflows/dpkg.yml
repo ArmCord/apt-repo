@@ -1,0 +1,36 @@
+name: Parse-dpkg
+on: push
+jobs:
+  Parse-dpkg:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout files
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Create Packages file
+        run: dpkg-scanpackages --multiversion debian > debian/Packages
+
+      - name: gzip Packages file
+        run: gzip -k -f debian/Packages
+
+      - name: Create Release file
+        run: apt-ftparchive release debian > debian/Release
+
+      - name: Import private GPG key
+        run: echo -n ${{secrets.APT_SIGNING_KEY}} | gpg --import
+
+      - name: Sign Release file
+        run: gpg --default-key linux@armcord.app -abs -o - debian/Release > debian/Release.gpg
+
+      - name: Sign InRelease file
+        run: gpg --default-key linux@armcord.app --clearsign -o - debian/Release > debian/InRelease
+
+      - name: Commit files
+        run: |
+          git config user.name "APT Repository Maintainer"
+          git config user.email "action@github.com"
+          git add . || true
+          git commit -m "Add APT information for release"
+          git push -f || true
