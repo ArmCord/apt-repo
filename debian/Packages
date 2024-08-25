@@ -1,25 +1,5 @@
 Package: armcord
 Version: 3.3.0
-Architecture: amd64
-Maintainer: linux@armcord.app
-Installed-Size: 275290
-Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
-Recommends: libappindicator3-1
-Filename: debian/ArmCord-3.3.0-linux-amd64.deb
-Size: 76151252
-MD5sum: 55f524237ab410825ae7942f3ce81626
-SHA1: f522ef757aaf1e929d3d7f3fbf4346c820651684
-SHA256: adfee89fc0c7d147258a799054bff90bdace188a4b7fe4a24ca93235345eef7a
-Section: default
-Priority: optional
-Homepage: https://github.com/armcord/armcord#readme
-Description:
-  ArmCord is a custom client designed to enhance your Discord experience while keeping everything lightweight.
-License: OSL-3.0
-Vendor: linux@armcord.app
-
-Package: armcord
-Version: 3.3.0
 Architecture: arm64
 Maintainer: linux@armcord.app
 Installed-Size: 279149
@@ -50,6 +30,26 @@ Size: 69592388
 MD5sum: ebb6e739ab669cab414f6412f7350ad8
 SHA1: eb9147094796dfb2326e4edd0b77a8a8564b78c4
 SHA256: af459e8002e11f0033d104b4034aaa9af2eb7f433a0188f1fbc311e35bc0a849
+Section: default
+Priority: optional
+Homepage: https://github.com/armcord/armcord#readme
+Description:
+  ArmCord is a custom client designed to enhance your Discord experience while keeping everything lightweight.
+License: OSL-3.0
+Vendor: linux@armcord.app
+
+Package: armcord
+Version: 3.3.0
+Architecture: amd64
+Maintainer: linux@armcord.app
+Installed-Size: 275290
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
+Recommends: libappindicator3-1
+Filename: debian/ArmCord-3.3.0-linux-amd64.deb
+Size: 76151252
+MD5sum: 55f524237ab410825ae7942f3ce81626
+SHA1: f522ef757aaf1e929d3d7f3fbf4346c820651684
+SHA256: adfee89fc0c7d147258a799054bff90bdace188a4b7fe4a24ca93235345eef7a
 Section: default
 Priority: optional
 Homepage: https://github.com/armcord/armcord#readme
