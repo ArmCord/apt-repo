@@ -9,14 +9,17 @@ jobs:
         with:
           lfs: true
 
+      - name: Change directory
+        run: cd debian
+
       - name: Create Packages file
-        run: dpkg-scanpackages --multiversion debian > debian/Packages
+        run: dpkg-scanpackages --multiversion . > Packages
 
       - name: gzip Packages file
-        run: gzip -k -f debian/Packages
+        run: gzip -k -f Packages
 
       - name: Create Release file
-        run: apt-ftparchive release debian > debian/Release
+        run: apt-ftparchive release . > Release
 
       - name: Import private GPG key
         run: echo -n "$APT_SIGNING_KEY" | gpg --import
@@ -24,10 +27,10 @@ jobs:
           APT_SIGNING_KEY: ${{secrets.APT_SIGNING_KEY}}
 
       - name: Sign Release file
-        run: gpg --default-key linux@armcord.app -abs -o - debian/Release > debian/Release.gpg
+        run: gpg --default-key linux@armcord.app -abs -o - Release > Release.gpg
 
       - name: Sign InRelease file
-        run: gpg --default-key linux@armcord.app --clearsign -o - debian/Release > debian/InRelease
+        run: gpg --default-key linux@armcord.app --clearsign -o - Release > InRelease
 
       - name: Commit files
         run: |
