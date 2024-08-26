@@ -22,7 +22,7 @@ jobs:
           APT_SIGNING_KEY: ${{secrets.APT_SIGNING_KEY}}
 
       - name: Import private GPG key
-        run: echo -n "$GPG_PASSWORD" | gpg --yes --passphrase-fd 0 --import private.key
+        run: gpg --yes --pinentry-mode loopback --passphrase "$GPG_PASSWORD" --import private.key
         env:
           GPG_PASSWORD: ${{secrets.GPG_PASSWORD}}
 
