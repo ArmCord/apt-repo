@@ -10,3 +10,5 @@ sudo curl -SsL -o /etc/apt/sources.list.d/armcord.list https://apt.armcord.dev/a
 sudo apt update
 sudo apt install armcord
 ```
+
+[![Parse-dpkg](https://github.com/ArmCord/apt-repo/actions/workflows/dpkg.yml/badge.svg)](https://github.com/ArmCord/apt-repo/actions/workflows/dpkg.yml)
