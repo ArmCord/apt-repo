@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: Mon, 26 Aug 2024 00:00:13 +0000
+MD5Sum:
+ 18e67c2ae16a3ba5a999d05e1c6a41d1             2185 Packages
+ 89d34f0e349509d02e2c973bdd150e19              756 Packages.gz
+ 0568469159d734d554ec3ec63ef9949a               38 Release
+ a2c02e59dfacd1b60c9b8a9dcb8d9182             2179 debian/Packages
+ 7127b57caeb995836bee5dbc77df593f              754 debian/Packages.gz
+ 183a119049003a8930ec6c71d72ca4f3             1204 debian/Release
+SHA1:
+ 68236c656c4b497412e25c4c5510c7c6deaadccd             2185 Packages
+ 038046a0047e87a4c0ecd3a2fda9a7b08c662193              756 Packages.gz
+ 9dd099d36a5dcdad73550451423aa5393cc9ac98               38 Release
+ 43f0e1c1dbb75856bd202d17e18b05e8e4a9c636             2179 debian/Packages
+ c74e336736b4a51399d5ded6f0fb61082a6062af              754 debian/Packages.gz
+ 4deaaf690a982212d0f57e2a2a7c9bd6a9e35c5e             1204 debian/Release
+SHA256:
+ e216accc6f0fe81b49ef5eb3291176b703748b840e0ead8f58ef20fe6f60af7b             2185 Packages
+ d39eca9e2a7cdccfd2ebcdcc69c7d46718f5942bc17ce73b8a180e30d17530bd              756 Packages.gz
+ abbecbe6a61fefaad1c33226c3fd3d62355b1190266504d7c51f0bf961d97b52               38 Release
+ 5bcae610c537f40978086da1cfbb306b78fd01b2e447579ad8f4658f226ecfa6             2179 debian/Packages
+ 12a9915573d29ec9d15b40e14d79d437198621ec9e3a0097fa264e560cee9bb3              754 debian/Packages.gz
+ fd0a78d3e239d0503883e1adb9885a1bb07ad952379bb3ddbd5fdc938b199236             1204 debian/Release
+SHA512:
+ e45f705c46fcb604fe40d6389b52297ed91c53f4af5b0d8899345bc70d28f4730de5cb9bf9af3b27ee44fddf3472fe6a6429ee2a6c630ff84f33bb1241a834cb             2185 Packages
+ 44be34493f7b67273c39f9e99890a10e18d684b7d5dea65f7fc3f30d143619331af2d71abbd27e369bd11487edd3eabff36aef24b58e45aa69757f46ce032f86              756 Packages.gz
+ 3c5f0421ff781f14562d122dec515cfe92ba0542442e6eda6497635deea51b473705ba33864d129adc3f46f7bbe353c628594c5202f0d707a8d48a81c3f6af10               38 Release
+ 58c7281e157cdbc375afdd6f1acbb308d0cc017cefa1311a3c81d89600c1747443038a6019d2bf08800a7e96f2f1b8db5f247220b93a70736eca144334ae684b             2179 debian/Packages
+ b98b252e90252fa823e921a6eb8cc91ba8e77d32080449a393b781e340d3383905c92250f02f2aa1202049f269bb29890000a2006134ae115f00de1f8906ce44              754 debian/Packages.gz
+ 6608f8d3ad1292ab56711dc897139925485a8fb842d6411dc18b39f5187d943b1dff36201a0db56478c7d17032dfaaf39f9559543372b95b8530727fc06dd186             1204 debian/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQJGBAEBCgAwFiEEh7BW9g6MvDIwqePr/AKJJTz/ZoAFAmbLxY0SHGxpbnV4QGFy
+bWNvcmQuYXBwAAoJEPwCiSU8/2aAaBYQAKicsWYnYqfu+bnh1PoZapiAwOBakjkE
+hcpolXQRlqdR7/YjPujyVc9LdW3eJwouF4kR2WCjQNcioD0bbyaN/gUusriLJ+T4
+peTGWjXSaqKmygNcfHorpgr5S0wCZa4DMB021G9YHV+AMrr+Z9eCWfoTGNeLPL1c
+ILWwOFCSbc/qXFVmIJvmnX4MtvQXkWJH1T61XTI9crRClrQWMsN+czba1UYFiHl8
+BmXnKGQx8ZtBRszFtTOU4oVnoHbq/kPbii+JDHrO1iW9eho/zkdcy7GuWQ9/qvgX
+6uq5GYDjQll7jVFe2CZnLut/UuLkeUuzGjhSqcmx6G4Y72DPwlrJE+UrfUkZrF3Z
+9Ac0Ej6X+RbNqkVlT9xeBh+1okzAwMg+j48vqVKvPRVop1xZihwqAH/0EqaJzYtj
+/5w3JEmJ+UZnK4r7PwKf6ZigM6Xyom5ErWcCK7MrEVg455LD4B4/1qEmEhhWENjf
+cQkYCKJqEa6qyXMXH5GVrbe5rK4hmVbUDDQ83yXENPGqH5KKJp3wzQTai5CqVQph
+FEjxCFkl0ic39xxvjyGqvLQ++RnqYDxP1Kg1Z6eo38GK6rzPRP8eO1K/j5h+JkL4
+5gtjo9cTCjDH3KqewTHZnFTqi+TdVgEoze2yj0Hxb3scsdkllSsvAg7bMbDlF0fG
+DFU6fuGJgQ8T
+=bvW6
+-----END PGP SIGNATURE-----
