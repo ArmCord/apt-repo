@@ -16,10 +16,15 @@ jobs:
       - name: Create Release file
         run: apt-ftparchive release . > Release
 
-      - name: Import private GPG key
-        run: echo -n "$APT_SIGNING_KEY" | gpg --import
+      - name: Write private GPG key to file
+        run: echo -n $APT_SIGNING_KEY > ${{runner.temp}}/private.key
         env:
           APT_SIGNING_KEY: ${{secrets.APT_SIGNING_KEY}}
+
+      - name: Import private GPG key
+        run: echo -n $GPG_PASSWORD | gpg --yes --passphrase-fd 0 --import ${{runner.temp}}/private.key
+        env:
+          GPG_PASSWORD: ${{secrets.GPG_PASSWORD}}
 
       - name: Sign Release file
         run: gpg --default-key linux@armcord.app -abs -o - Release > Release.gpg
