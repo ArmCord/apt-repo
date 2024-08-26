@@ -27,10 +27,14 @@ jobs:
           GPG_PASSWORD: ${{secrets.GPG_PASSWORD}}
 
       - name: Sign Release file
-        run: gpg --default-key linux@armcord.app -abs -o - Release > Release.gpg
+        run: gpg --pinentry-mode loopback --passphrase "$GPG_PASSWORD" --default-key linux@armcord.app -abs -o - Release > Release.gpg
+        env:
+          GPG_PASSWORD: ${{secrets.GPG_PASSWORD}}
 
       - name: Sign InRelease file
-        run: gpg --default-key linux@armcord.app --clearsign -o - Release > InRelease
+        run: gpg --pinentry-mode loopback --passphrase "$GPG_PASSWORD" --default-key linux@armcord.app --clearsign -o - Release > InRelease
+        env:
+          GPG_PASSWORD: ${{secrets.GPG_PASSWORD}}
 
       - name: Commit files
         run: |
