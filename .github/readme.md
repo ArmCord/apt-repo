@@ -12,3 +12,5 @@ sudo apt install armcord
 ```
 
 [![Parse-dpkg](https://github.com/ArmCord/apt-repo/actions/workflows/dpkg.yml/badge.svg)](https://github.com/ArmCord/apt-repo/actions/workflows/dpkg.yml)
+
+This repo's page deployment will cancel, and then run again after the actions finish. This is normal behavior
