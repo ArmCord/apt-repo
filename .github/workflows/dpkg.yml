@@ -17,12 +17,12 @@ jobs:
         run: apt-ftparchive release . > Release
 
       - name: Write private GPG key to file
-        run: echo -n $APT_SIGNING_KEY > ${{runner.temp}}/private.key
+        run: echo -n $APT_SIGNING_KEY > private.key
         env:
           APT_SIGNING_KEY: ${{secrets.APT_SIGNING_KEY}}
 
       - name: Import private GPG key
-        run: echo -n $GPG_PASSWORD | gpg --yes --passphrase-fd 0 --import ${{runner.temp}}/private.key
+        run: echo -n $GPG_PASSWORD | gpg --yes --passphrase-fd 0 --import private.key
         env:
           GPG_PASSWORD: ${{secrets.GPG_PASSWORD}}
 
@@ -37,5 +37,6 @@ jobs:
           git config user.name "APT Repository Maintainer"
           git config user.email "action@github.com"
           git add . || true
+          git add !*.key || true
           git commit -m "Add APT information for release"
           git push -f || true
