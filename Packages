@@ -5,7 +5,7 @@ Maintainer: linux@armcord.app
 Installed-Size: 279149
 Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
 Recommends: libappindicator3-1
-Filename: ./debian/ArmCord-3.3.0-linux-arm64.deb
+Filename: ./ArmCord-3.3.0-linux-arm64.deb
 Size: 71498782
 MD5sum: 758265b0f5b09e3e28d3dc8a48007c56
 SHA1: f17bcb78f3597526da17a141b8f4970908262588
@@ -25,7 +25,7 @@ Maintainer: linux@armcord.app
 Installed-Size: 208180
 Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
 Recommends: libappindicator3-1
-Filename: ./debian/ArmCord-3.3.0-linux-armv7l.deb
+Filename: ./ArmCord-3.3.0-linux-armv7l.deb
 Size: 69591376
 MD5sum: f77c9b3f0d6e09821053ac869630b940
 SHA1: 78dff692a0df4c711abf72d4c6ea4a692808fff0
@@ -45,7 +45,7 @@ Maintainer: linux@armcord.app
 Installed-Size: 275290
 Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
 Recommends: libappindicator3-1
-Filename: ./debian/ArmCord-3.3.0-linux-amd64.deb
+Filename: ./ArmCord-3.3.0-linux-amd64.deb
 Size: 76089646
 MD5sum: 289929a88dafe0d19d30c3526a67c51f
 SHA1: 4107b53da258d0809d783dc8925bce25dd98751f
