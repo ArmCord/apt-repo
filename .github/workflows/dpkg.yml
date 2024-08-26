@@ -6,11 +6,6 @@ jobs:
     steps:
       - name: Checkout files
         uses: actions/checkout@v4
-        with:
-          lfs: true
-
-      - name: Change directory
-        run: cd debian
 
       - name: Create Packages file
         run: dpkg-scanpackages --multiversion . > Packages
